@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148C14801593077600F029CE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 148C147F1593077600F029CE /* MBProgressHUD.m */; };
 		148EC25115920C2600705C53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148EC25015920C2600705C53 /* UIKit.framework */; };
 		148EC25315920C2600705C53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148EC25215920C2600705C53 /* Foundation.framework */; };
 		148EC25515920C2600705C53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148EC25415920C2600705C53 /* CoreGraphics.framework */; };
@@ -32,7 +33,6 @@
 		148EC2FF15920F9800705C53 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 148EC2F615920F9800705C53 /* ASINetworkQueue.m */; };
 		148EC3161592112100705C53 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148EC3151592112100705C53 /* CFNetwork.framework */; };
 		148EC3181592120300705C53 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 148EC3171592120300705C53 /* libz.dylib */; };
-		148EC31A1592124B00705C53 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 148EC3191592124B00705C53 /* libxml2.dylib */; };
 		148EC31C159212CF00705C53 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148EC31B159212CF00705C53 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		148C147E1593077600F029CE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		148C147F1593077600F029CE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		148EC24C15920C2600705C53 /* ASIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		148EC25015920C2600705C53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		148EC25215920C2600705C53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,7 +93,6 @@
 		148EC2F715920F9800705C53 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
 		148EC3151592112100705C53 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		148EC3171592120300705C53 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		148EC3191592124B00705C53 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		148EC31B159212CF00705C53 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -101,7 +102,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				148EC31C159212CF00705C53 /* MobileCoreServices.framework in Frameworks */,
-				148EC31A1592124B00705C53 /* libxml2.dylib in Frameworks */,
 				148EC3181592120300705C53 /* libz.dylib in Frameworks */,
 				148EC3161592112100705C53 /* CFNetwork.framework in Frameworks */,
 				148EC2DD15920D7100705C53 /* SystemConfiguration.framework in Frameworks */,
@@ -148,7 +148,6 @@
 		148EC24F15920C2600705C53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				148EC3191592124B00705C53 /* libxml2.dylib */,
 				148EC3171592120300705C53 /* libz.dylib */,
 				148EC3151592112100705C53 /* CFNetwork.framework */,
 				148EC2DC15920D7100705C53 /* SystemConfiguration.framework */,
@@ -206,6 +205,8 @@
 		148EC28515920C3500705C53 /* external */ = {
 			isa = PBXGroup;
 			children = (
+				148C147E1593077600F029CE /* MBProgressHUD.h */,
+				148C147F1593077600F029CE /* MBProgressHUD.m */,
 				148EC3001592105B00705C53 /* Reachability */,
 				148EC2BF15920CC400705C53 /* ASIHttpRequest */,
 			);
@@ -368,6 +369,7 @@
 				148EC2FD15920F9800705C53 /* ASIHTTPRequest.m in Sources */,
 				148EC2FE15920F9800705C53 /* ASIInputStream.m in Sources */,
 				148EC2FF15920F9800705C53 /* ASINetworkQueue.m in Sources */,
+				148C14801593077600F029CE /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +537,7 @@
 				148EC28115920C2600705C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		148EC28215920C2600705C53 /* Build configuration list for PBXNativeTarget "ASIDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +546,7 @@
 				148EC28415920C2600705C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
